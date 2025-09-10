@@ -62,16 +62,20 @@ body{
 
 
 .footer-item{
-    gap:33px;
+    gap:40px;
 }
-
+.footer a,.addres-info{
+    color:#8A8FB9;
+}
 .footer{
     background-color: #EEEFFB;
+    padding:50px 0;
 }
 
 
 .footer .left-side{
-    gap:17px;
+    gap:35px;
+    align-items: flex-start;
 }
 
 .footer .right-side{
