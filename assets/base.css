@@ -39,6 +39,7 @@ border-radius: 2px;
 
 
 .row{
+    gap:20px;
 display:flex;
     justify-content: space-between;
     align-items: center;
@@ -50,10 +51,28 @@ width:calc(100% - 320px);
 margin: auto;
 }
 
+@media screen and (max-width:1400px){
+    .container{
+        width:calc(100% - 200px);
+    }
+}
+
+
+@media screen and (max-width:992px){
+    .container{
+        width:calc(100% - 100px);
+    }
+}
+@media screen and (max-width:576px){
+    .container{
+        width:calc(100% - 40px);
+    }
+}
+
+
 /* end heaer */
 
-/*
-start footer  */
+/*start footer  */
 
 .text-white{
     color:#fff;
@@ -91,14 +110,6 @@ start footer  */
 .gap8{
     gap:40px;
 }
-
-
-
-
-
-
-
-
 
 
 /*end footer
