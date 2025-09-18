@@ -127,3 +127,11 @@ margin: auto;
 .text-right{
     text-align: right;
 }
+
+.text-secondary{
+    color:#00009D;
+}
+
+.text-color{
+    color:#FB2E86;
+}
