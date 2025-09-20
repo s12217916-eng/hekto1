@@ -46,10 +46,6 @@ body{
     padding: 8px 13px;
 }
 
-
-
-
-
 @media screen and (max-width:900px) {
     .list, .search {
         display: none;
@@ -74,14 +70,9 @@ body{
     flex:1 0 60%;
 }
 
-
-
 .hero-content{
 font-size: 20px;
 }
-    
-
-
 
 .hero-img{
     flex:1 0 30%;
@@ -100,7 +91,6 @@ font-size: 20px;
     padding:15px;
     gap:20px;
 }
-
 
 .shop{
     padding-top: 7px;
@@ -123,8 +113,6 @@ font-size: 20px;
     height:400px;
 }
 
-
-
 @media screen and (max-width:1100px) {
     .hero-content .hero-img{
         align-items: center;
@@ -142,9 +130,6 @@ font-size: 20px;
     }
     
 }
-
-
-
 
 /*end hero*/
 
@@ -166,7 +151,6 @@ width:150px;
 height: 150px;
 }
 
-
 @media screen and (max-width:900px) {
     .clients .logo{
         width:calc((100% - 30px)/3);
@@ -174,8 +158,6 @@ height: 150px;
 }
 
 /*end client*/
-
-
 
 /*start products*/
 .featured-product{
@@ -222,7 +204,6 @@ border-radius:4px;
   padding: 20px;         
 object-fit: contain;   
 }
-
 
 .product-details{
     display: flex;
@@ -272,7 +253,6 @@ border-radius: 4px;
     color:#fff;
 }
 
-
 .hover-color{
     background-color:#2F1AC4;}
 .hover-color2{
@@ -282,7 +262,6 @@ border-radius: 4px;
     display: none; 
     transition:all 1s;
 }
-
 .product:hover .view-details button {
     display: block; 
     margin-bottom: 10px;
@@ -299,15 +278,11 @@ border-radius: 4px;
     transition:all 1s;
 }
 
-
 .product:hover .hover {
     display: flex;   
       gap:10px;
    padding-right: 200px;
 }
-
-
-
 
 /*end products*/
 
@@ -330,8 +305,6 @@ border-radius: 4px;
             position: relative;
             
         }
-        
-        
         
         .latest-product ul {
             padding: 30px 0;
@@ -476,8 +449,6 @@ border-radius: 4px;
 
 /*end latest-product*/
 
-
-
 /*start Shopex*/
 
 .Shopex-Offer{
@@ -509,7 +480,6 @@ color:#8A8FB9;
 
 }
 
-
 @media screen and (max-width:992px) {
     .Shopex-Offer{
     width:calc(100% - 300px);}
@@ -521,19 +491,130 @@ color:#8A8FB9;
     width:calc(100%);}
     
 }
-
-
-
-
-
-
-
-
 /*end Shopex*/
 
 
 
+/*start uniqe-sofa*/
+.uniqee-sofa{
+    padding-top: 59px;
+    padding-bottom: 50px;
+    width:100%;
+}
+.uniqe-sofa{
+    align-items: center;
+    text-align: center;
+}
+.img-sofa{
+     width:calc(100% - 500px);
+}
+/*end uniqe-sofa*/
 
+
+/*start Trending Products*/
+.Trending-Product .decoration-non{
+
+text-decoration: line-through;
+color:#8A8FB9;
+
+}
+.Trending-Product .span{
+
+color:#151875;
+
+
+}
+.price-info{
+    display:flex;
+    justify-content: center;
+    gap:12px;
+}
+
+.Trending_Products h2{
+    padding-bottom: 39px;
+}
+
+.Trending-Products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  gap: 23px; 
+  padding-bottom: 40px;
+}
+
+.Trending-Product {
+  flex: 0 1 250px; 
+  max-width: 250px;
+  text-align: center;
+}
+
+
+@media (max-width: 1020px) {
+  .Trending-Product {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+}
+
+
+@media (max-width: 600px) {
+  .Trending-Product {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+
+
+.extension-trend-product .img{
+    width:430px;
+    height: 300px;
+}
+.extension-trend-product{
+
+    display:flex;
+    width:calc(100%-400px);
+    justify-content: center;
+
+}
+.extension-trend-product{
+    padding-right:50px;
+}
+.extension-trend-product2{
+    display:flex;
+    gap:5px;
+    flex-direction:column;
+    margin-top: 30px;
+}
+.extension-trend-product .img2{
+  width: 250px;
+   height:74px;
+   
+}
+
+
+@media screen and (max-width: 1067px) {
+  .extension-trend-product {
+    flex-direction: column;  
+    align-items: center;     
+    width: 100%;             
+    padding-right: 0;       
+  }
+  
+
+  .extension-trend-product .img {
+    width: 100%; 
+    max-width: 500px;
+  }
+
+  .extension-trend-product .img2 {
+    width: 100%; 
+    max-width: 300px;
+  }
+}
+
+
+/*end Trending Products*/
 
 /*start newslater*/
 
@@ -553,10 +634,6 @@ font-size:35px;
 /*end newslater*/
 
 /*start footer*/
-
-
-
-
 
 .footer-item h2 {
     margin-bottom: 30px;
