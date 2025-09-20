@@ -409,6 +409,9 @@ border-radius: 4px;
         }
         
         .leatest-product-details {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
             padding: 15px;
             text-align: center;
             width: 100%;
@@ -417,6 +420,7 @@ border-radius: 4px;
         .leatest-product-details p {
             font-weight: 600;
             margin-bottom: 10px;
+            margin-left: 50px;
             color: #151875;
         }
         
@@ -424,7 +428,7 @@ border-radius: 4px;
             font-size: 13px;
             text-decoration: line-through;
             color: #FB2448;
-            margin-left: 8px;
+            margin-left: 15px;
         }
         
         .text-blue {
@@ -474,7 +478,47 @@ border-radius: 4px;
 
 
 
+/*start Shopex*/
 
+.Shopex-Offer{
+    width:calc(100% - 500px);
+    margin: auto;
+    padding:80px 80px;
+    display:flex;
+    justify-content: space-between;
+}
+.Shopex h3{
+  padding-bottom: 20px;
+}
+ .What-Shopex-Offer .h2{
+   padding-bottom: 55px;
+}
+.Shopex{
+    margin: 0 25px;
+}
+
+.Shopex img{
+    width:75px;
+    height:75px;
+    padding-bottom: 20px;
+
+}
+
+.Shopex p{
+color:#8A8FB9;
+
+}
+
+
+
+
+
+
+
+
+
+
+/*end Shopex*/
 
 
 
@@ -498,21 +542,26 @@ font-size:35px;
 /*end newslater*/
 
 /*start footer*/
+
+
+
+
+
 .footer-item h2 {
     margin-bottom: 30px;
 }
 
 .footer-item nav{
-    
+
     gap:20px;
-   
+
 }
 
 
 .footer-item {
-    width:calc((100% - 20px)/3);
+    width:calc((100% - 20)/3);
     gap:20px;
-   
+
 }
 
 
@@ -539,7 +588,7 @@ font-size:35px;
 
 .footer .right-side{
     width:calc((100% - 20px) /2);
-    
+
 }
 
 
@@ -549,18 +598,10 @@ font-size:35px;
     }
 }
 @media screen and (max-width:576px) {
-   
+
     .footer-item{
         width: 100%;
          align-items: center;
     }
 }
 
-
-
-
-
-
-
-
-/*end footer*/
