@@ -510,6 +510,17 @@ color:#8A8FB9;
 }
 
 
+@media screen and (max-width:992px) {
+    .Shopex-Offer{
+    width:calc(100% - 300px);}
+}
+@media screen and (max-width:850px) {
+.Shopex-Offer{
+    display:flex;
+    flex-direction: column;
+    width:calc(100%);}
+    
+}
 
 
 
