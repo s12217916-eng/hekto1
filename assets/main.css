@@ -579,6 +579,7 @@ color:#151875;
 }
 .extension-trend-product{
     padding-right:50px;
+    padding-bottom: 50px;
 }
 .extension-trend-product2{
     display:flex;
@@ -616,6 +617,83 @@ color:#151875;
 
 /*end Trending Products*/
 
+/**/
+.Top-Categories{
+    gap:40px;
+}
+.Top-Categorie img{
+     border-radius: 50%;
+     object-fit: contain;
+    width:178px;
+    height:178;
+    
+
+}
+
+
+
+
+.categories-btn {
+  position: absolute;
+  width:120px;
+  bottom: 20px; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #08D15F;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.Top-Categorie:hover .categories-btn {
+  opacity: 1;
+}
+
+.price-info-{
+    display:flex;
+    flex-direction: column;
+    gap:5px;
+}
+.Top-Categorie p.span {
+    margin-left: 50px; 
+    
+}
+.img-top-ca{
+   position: relative; 
+  background-color: #F6F7FB;
+  border-radius: 50%;
+  width: 270px;
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; 
+  
+}
+
+.details-cate{
+    padding-top: 10px;
+    justify-content: center;
+    margin-right:10px; 
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+}
+.details-cate span{
+    margin-left: 45px;
+}
+
+
+
+/**/
+
+
+
 /*start newslater*/
 
 .newslater{
@@ -632,6 +710,102 @@ font-size:35px;
 }
 
 /*end newslater*/
+
+
+/*start Leatest-Blog*/
+
+.Leatest-Blogs{
+    display:flex;
+     padding-bottom: 150px;
+    justify-content: center;
+  gap:56px;
+  flex-wrap: wrap;
+}
+
+
+.Leatest_Blog .h2-text{
+    color:#151875;
+    padding-bottom: 80px;
+    text-align: center;
+ font-size: 35px;  
+}
+
+
+.Leatest-Blog .img{
+   max-width:370px ;
+    max-height:255px;
+}
+
+.date-name-main img{
+    width:11px;
+    height:11px;
+}
+
+.Leatest-Blog h2{
+    color:#151875;
+   
+    padding-bottom: 17px;
+}
+.Leatest-Blog p{
+    color:#72718F;
+    width:300px;
+    height:60px;
+    padding-bottom: 14px;
+}
+.Leatest-Blog a{
+    color:#151875;
+    width:77px;
+    height:30px;
+    text-decoration: underline;
+   
+}
+.date-name-main{
+    display:flex;
+    gap:44px;
+    padding-bottom: 31px;
+}
+.Leatest-Blog h2,
+.Leatest-Blog a {
+  transition: color 0.4s ease;}
+.Leatest-Blog:hover h2,
+.Leatest-Blog:hover a {
+  color: #FB2E86;
+}
+
+
+
+@media (max-width: 992px) {
+  .Leatest-Blog {
+    flex: 1 1 calc(50% - 56px);
+    max-width: calc(50% - 56px);
+  }
+}
+
+
+@media (max-width: 769px) {
+  .Leatest-Blog {
+    flex: 1 1 100%;
+    max-width: 100%;
+
+   justify-content: center;
+  }
+}
+
+
+
+/*end Leatest-Blog*/
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*start footer*/
 
