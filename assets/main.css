@@ -75,6 +75,7 @@ font-size: 20px;
 }
 
 .hero-img{
+    margin-right: 150px;
     flex:1 0 30%;
 }
 
@@ -85,7 +86,8 @@ font-size: 20px;
 }
 
 .text-content{
-    margin-top: 50px;
+    margin-top: 150px;
+    margin-left: 200px;
     display:flex;
     flex-direction: column;
     padding:15px;
@@ -233,6 +235,11 @@ background-color:#F701A8;
 .color-three{
 background-color:#00009D;
 }
+.hover{
+    padding:11px 11px;
+    width:100%;
+}
+
 
 .product-details h3{
     transition:all 1s;
@@ -271,6 +278,18 @@ border-radius: 4px;
     background-color: #08D15F;
     color:#fff;
 }
+
+.products{
+    width:calc(100% - 400px);
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+
+
+
 
 .hover {
     display: none;   
@@ -398,6 +417,9 @@ border-radius: 4px;
             color: #151875;
         }
         
+
+
+
         .red-span {
             font-size: 13px;
             text-decoration: line-through;
