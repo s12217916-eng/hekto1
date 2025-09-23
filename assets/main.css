@@ -4,7 +4,8 @@ body{
 }
 
 .header{
-    
+    width:calc(100% - 400px);
+    margin :0 auto;
     padding: 50px;
 }
 
@@ -177,7 +178,7 @@ padding:50px 0;
 .badge-sale{
    
     position:absolute;
-    top:25px;
+    top:30px;
     left:5px;
 }
 
@@ -262,9 +263,9 @@ border-radius: 4px;
 }
 
 .hover-color{
-    background-color:#2F1AC4;}
+    color:#2F1AC4;}
 .hover-color2{
-    background-color:#1DB4E7;}
+   color:#1DB4E7;}
 
     .view-details button {
     display: none; 
@@ -833,7 +834,7 @@ font-size:35px;
 
 
 .footer-item {
-    width:calc((100% - 20px)/3);
+    width:calc(100% - 400px);
     gap:20px;
 
 }
@@ -849,7 +850,7 @@ font-size:35px;
     color:#8A8FB9;
 }
 .footer{
-    
+   
     background-color: #EEEFFB;
     padding:50px 0;
 }
