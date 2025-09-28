@@ -145,13 +145,13 @@ font-size: 20px;
     .hero-content{
         
        .hero-content{
-        justify-content: flex-start; /* المحتوى عالطرف */
-        text-align: left; /* النص يصف عالشمال */
+        justify-content: flex-start; 
+        text-align: left;
     }
 
     .text-content{
-        margin: 50px 20px; /* تخفيف الهوامش */
-        align-items: flex-start; /* العناصر كلها عالشمال */
+        margin: 50px 20px;
+        align-items: flex-start; 
     
     }
 }
@@ -197,13 +197,13 @@ height: 150px;
 .products {
   width: 100%;
   display: flex;
-  flex-wrap: wrap; /* يخلي العناصر تلتف */
+  flex-wrap: wrap; 
   justify-content: center;
   gap: 20px;
 }
 
 .product {
-  flex: 1 1 calc(25% - 20px); /* 4 عناصر بالديسكتوب */
+  flex: 1 1 calc(25% - 20px); 
   max-width: calc(25% - 20px);
   display: flex;
   flex-direction: column;
@@ -295,7 +295,7 @@ height: 150px;
   left: 5px;
 }
 
-/* 📱 موبايل: عنصر واحد */
+
 @media (max-width: 576px) {
   .product {
     flex: 1 1 100%;
@@ -303,7 +303,7 @@ height: 150px;
   }
 }
 
-/* 📲 تابلت صغير: عنصرين */
+
 @media (min-width: 577px) and (max-width: 768px) {
   .product {
     flex: 1 1 calc(50% - 20px);
@@ -311,7 +311,7 @@ height: 150px;
   }
 }
 
-/* 💻 تابلت كبير/لابتوب: 3 عناصر */
+
 @media (min-width: 769px) and (max-width: 1024px) {
   .product {
     flex: 1 1 calc(33.333% - 20px);
@@ -319,7 +319,7 @@ height: 150px;
   }
 }
 
-/* 🖥️ ديسكتوب: 4 عناصر */
+
 @media (min-width: 1025px) {
   .product {
     flex: 1 1 calc(25% - 20px);
