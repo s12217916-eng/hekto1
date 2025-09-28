@@ -202,6 +202,7 @@ height: 150px;
   gap: 20px;
 }
 
+
 .product {
   flex: 1 1 calc(25% - 20px); 
   max-width: calc(25% - 20px);
@@ -295,7 +296,12 @@ height: 150px;
   left: 5px;
 }
 
-
+@media (min-width: 1200px) {
+  .products {
+     max-width: calc(100% - 400px);
+    margin: 0 auto; 
+  }
+}
 @media (max-width: 576px) {
   .product {
     flex: 1 1 100%;
