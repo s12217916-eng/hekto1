@@ -56,6 +56,19 @@ body{
         
     }
 }
+
+@media screen and (max-width:890px) {
+    .header{
+    width: 100%;
+    margin :0 auto;
+    padding:50px 50px;
+    justify-content: space-between;
+}
+    
+}
+
+
+
 /*end header*/
 
 /*start hero*/
@@ -127,11 +140,21 @@ font-size: 20px;
 }
 @media screen and (max-width:600px) {
     .hero-img{
-        
         display: none;
-
     }
+    .hero-content{
+        
+       .hero-content{
+        justify-content: flex-start; /* المحتوى عالطرف */
+        text-align: left; /* النص يصف عالشمال */
+    }
+
+    .text-content{
+        margin: 50px 20px; /* تخفيف الهوامش */
+        align-items: flex-start; /* العناصر كلها عالشمال */
     
+    }
+}
 }
 
 /*end hero*/
@@ -163,149 +186,147 @@ height: 150px;
 /*end client*/
 
 /*start products*/
-.featured-product{
-   
-padding:50px 0;
-
-}
-.product{
-    position:relative;
-}
-.featured-product h2{
-
-    margin-bottom: 35px;
-}
-.badge-sale{
-   
-    position:absolute;
-    top:30px;
-    left:5px;
+.featured-product {
+  padding: 50px 0;
 }
 
-.featured-product .row{
-    justify-content: flex-start;
-    gap:25px;
+.featured-product h2 {
+  margin-bottom: 35px;
 }
 
-.featured-product .product{
-    flex:1 0 300px;
-    box-shadow: 0px 4px 4px #00000040;
-border-radius:4px;
+.products {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap; /* يخلي العناصر تلتف */
+  justify-content: center;
+  gap: 20px;
 }
 
 .product {
+  flex: 1 1 calc(25% - 20px); /* 4 عناصر بالديسكتوب */
+  max-width: calc(25% - 20px);
   display: flex;
   flex-direction: column;
-  align-items: center;     
-  transition:all 1s;
+  align-items: center;
+  box-shadow: 0px 4px 4px #00000040;
+  border-radius: 4px;
+  transition: all 1s;
+  position: relative;
 }
 
-.product .img img{
-  width: 100%;           
-  height: 200px;        
-  background-color: #F6F7FB;         
-  padding: 20px;         
-object-fit: contain;   
+.product .img img {
+  width: 100%;
+  height: 200px;
+  background-color: #F6F7FB;
+  padding: 20px;
+  object-fit: contain;
 }
 
-.product-details{
-    display: flex;
-    flex-direction: column;
-    gap:10px;
-    padding:10px;
-    transition:all 1s;
-    width:100%;
-}
-.color{
-width:14px;
-height: 4px;
-border-radius: 10px;
-border:none;
-outline: none;
-cursor: pointer;
-}
-.text-primary{
-    color:var(--primary);
-}
-.color-one{
-background-color:#05EB69;
-}
-.color-two{
-background-color:#F701A8;
-}
-.color-three{
-background-color:#00009D;
-}
-.hover{
-    padding:11px 11px;
-    width:100%;
+.product-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  transition: all 1s;
+  width: 100%;
 }
 
-
-.product-details h3{
-    transition:all 1s;
-}
-.product-info span{
-    transition: all 1s;
-}
-.product:hover .product-details{
-    background-color: #2F1AC4;
-border-radius: 4px;
-}
-.product:hover .product-details h3{
-    color:#fff;
-}
-.product:hover .color-three{
-    color:#FFEAC4;
-}
-.product:hover .product-info span{
-    color:#fff;
+.color {
+  width: 14px;
+  height: 4px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
-.hover-color{
-    color:#2F1AC4;}
-.hover-color2{
-   color:#1DB4E7;}
-
-    .view-details button {
-    display: none; 
-    transition:all 1s;
-}
-.product:hover .view-details button {
-    display: block; 
-    margin-bottom: 10px;
-    width:120px;
-    height:30px;
-    background-color: #08D15F;
-    color:#fff;
+.text-primary {
+  color: var(--primary);
 }
 
-.products{
-    width:calc(100% - 400px);
-    display: flex;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
-    gap:20px;
-}
-
-
-
+.color-one { background-color: #05EB69; }
+.color-two { background-color: #F701A8; }
+.color-three { background-color: #00009D; }
 
 .hover {
-    display: none;   
-    gap: 10px;
-    padding-right: 200px;
-    transition:all 1s;
+  display: none;
+  gap: 10px;
+  padding-right: 200px;
+  transition: all 1s;
+  width: 100%;
 }
 
 .product:hover .hover {
-    display: flex;   
-      gap:10px;
-   padding-right: 200px;
+  display: flex;
 }
 
-/*end products*/
+.product-details h3,
+.product-info span {
+  transition: all 1s;
+}
+
+.product:hover .product-details {
+  background-color: #2F1AC4;
+  border-radius: 4px;
+}
+.product:hover .product-details h3 {
+  color: #fff;
+}
+.product:hover .product-info span {
+  color: #fff;
+}
+
+.view-details button {
+  display: none;
+  transition: all 1s;
+}
+.product:hover .view-details button {
+  display: block;
+  margin-bottom: 10px;
+  width: 120px;
+  height: 30px;
+  background-color: #08D15F;
+  color: #fff;
+}
+
+.badge-sale {
+  position: absolute;
+  top: 30px;
+  left: 5px;
+}
+
+/* 📱 موبايل: عنصر واحد */
+@media (max-width: 576px) {
+  .product {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+/* 📲 تابلت صغير: عنصرين */
+@media (min-width: 577px) and (max-width: 768px) {
+  .product {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+}
+
+/* 💻 تابلت كبير/لابتوب: 3 عناصر */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .product {
+    flex: 1 1 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+  }
+}
+
+/* 🖥️ ديسكتوب: 4 عناصر */
+@media (min-width: 1025px) {
+  .product {
+    flex: 1 1 calc(25% - 20px);
+    max-width: calc(25% - 20px);
+  }
+}
+
 
 /*start latest-product*/
 
@@ -449,6 +470,12 @@ border-radius: 4px;
                 gap: 40px;
             }
         }
+        @media (max-width: 763px) {
+            .Leatest-Blog {
+               justify-content: center;
+                align-items: center;
+                text-align: center;
+            }}
         
         @media (max-width: 576px) {
             .product1 {
@@ -467,6 +494,19 @@ border-radius: 4px;
            
 
         }
+        @media (max-width: 763px) {
+    .Leatest-Blogs {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .Leatest-Blog {
+        margin-bottom: 20px; 
+    }
+}
 
 
 /*********************************************/
@@ -712,6 +752,19 @@ color:#151875;
     margin-left: 45px;
 }
 
+@media (max-width: 763px) {
+    .Top-Categories {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .Top-Categories {
+        margin-bottom: 20px; 
+    }
+}
 
 
 /**/
